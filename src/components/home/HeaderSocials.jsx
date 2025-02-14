@@ -8,7 +8,7 @@ const HeaderSocials = () => {
             <a href='#home' className='home__social-link' target='_blank' rel='noreferrer'>
             </a>
 
-            <a href='https://github.com/Arun-21BEECE006' className='home__social-link' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/Dharsini-21BEECE014' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaGithub />
             </a>
 
@@ -20,17 +20,17 @@ const HeaderSocials = () => {
                 <FaDev />
             </a>  */}
 
-            <a href='https://www.linkedin.com/in/arun-kumar-m-aa3350249/' className='home__social-link' target='_blank' rel='noreferrer'>
+            <a href='https://www.linkedin.com/mwlite/in/dharsini-harsha-377112249' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaLinkedinIn />
             </a>
 
-            <a href='https://www.facebook.com/profile.php?id=100013098244893' className='home__social-link' target='_blank' rel='noreferrer'>
+            <a href='https://www.facebook.com/profile.php?id=100079705487637' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaFacebookF />
             </a>
 
-            <a href='https://x.com/Master_Arun29' className='home__social-link' target='_blank' rel='noreferrer'>
+            {/*<a href='https://x.com/Master_Arun29' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaTwitter />
-            </a>
+            </a>*/}
         </div>
     );
 };

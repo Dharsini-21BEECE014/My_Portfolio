@@ -67,7 +67,6 @@
 
 // export default Services
 
-
 import React, { useState } from "react";
 import "./Services.css";
 
@@ -77,67 +76,98 @@ import { RiLink } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 const Portfolio = () => {
-	const [items, setItems] = useState(Menu);
-	const [activeFilter, setActiveFilter] = useState(0);
-	const filterItems = (categoryItem) => {
-		const updatedItems = Menu.filter((curElem) => {
-			return curElem.category.includes(categoryItem);
-		});
+  const [items, setItems] = useState(Menu);
+  const [activeFilter, setActiveFilter] = useState(0);
+  const filterItems = (categoryItem) => {
+    const updatedItems = Menu.filter((curElem) => {
+      return curElem.category.includes(categoryItem);
+    });
 
-		setItems(updatedItems);
-	};
+    setItems(updatedItems);
+  };
 
-	return (
-		<section className="portfolio container section" id="services">
-			<h2 className="section__title">Acievements</h2>
+  return (
+    <section className="portfolio container section" id="services">
+      <h2 className="section__title">Achievements</h2>
 
-			<div className="portfolio__filters">
-				<span className={activeFilter === 0 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { setItems(Menu); setActiveFilter(0) }}>
-					ALL
-				</span>
-				<span className={activeFilter === 1 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("NeoPat Winner"); setActiveFilter(1) }}>
+      <div className="portfolio__filters">
+        <span
+          className={
+            activeFilter === 0
+              ? "portfolio__item portfolio__item-active"
+              : "portfolio__item"
+          }
+          onClick={() => {
+            setItems(Menu);
+            setActiveFilter(0);
+          }}
+        >
+          ALL
+        </span>
+        {/*	<span className={activeFilter === 1 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("NeoPat Winner"); setActiveFilter(1) }}>
                     NeoPat Winner
-				</span>
-				<span className={activeFilter === 2 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("First Rank Holder"); setActiveFilter(2) }}>
+				</span>*/}
+        <span
+          className={
+            activeFilter === 2
+              ? "portfolio__item portfolio__item-active"
+              : "portfolio__item"
+          }
+          onClick={() => {
+            filterItems("First Rank Holder");
+            setActiveFilter(2);
+          }}
+        >
+          First Rank Holder
+        </span>
+        {/* <span className={activeFilter === 3 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Second Rank Holder"); setActiveFilter(3) }}>
 					First Rank Holder
-				</span>
-                <span className={activeFilter === 3 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Second Rank Holder"); setActiveFilter(3) }}>
-					Second Rank Holder
-				</span>
-			</div>
+				</span> */}
+      </div>
 
-			<div className="portfolio__container grid">
-				{items.map((elem) => {
-					const { id, image, title, category, url } = elem;
+      <div className="portfolio__container grid">
+        {items.map((elem) => {
+          const { id, image, title, category, url } = elem;
 
-					return (
-						<motion.div
-							layout
-							animate={{ opacity: 1 }}
-							initial={{ opacity: 0 }}
-							exit={{ opacity: 0 }}
-							transition={{ duration: 0.3 }}
-							className="portfolio__card"
-							key={id}>
-							<div className="portfolio__thumbnail">
-								<img src={image} alt="" className="portfolio__img" height="267" />
-								<div className="portfolio__mask"></div>
-							</div>
+          return (
+            <motion.div
+              layout
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="portfolio__card"
+              key={id}
+            >
+              <div className="portfolio__thumbnail">
+                <img
+                  src={image}
+                  alt=""
+                  className="portfolio__img"
+                  height="267"
+                />
+                <div className="portfolio__mask"></div>
+              </div>
 
-							<span className="portfolio__category">{category.join(', ')}</span>
-							<h3 className="portfolio__title">{title}</h3>
-							<a href={url} target="_blank" rel="noreferrer" className="portfolio__button">
-								<RiLink className="portfolio__button-icon" />
-							</a>
-							{/* <a href={repositoryUrl} target="_blank" rel="noreferrer" className="portfolio__github-button">
+              <span className="portfolio__category">{category.join(", ")}</span>
+              <h3 className="portfolio__title">{title}</h3>
+              <a
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                className="portfolio__button"
+              >
+                <RiLink className="portfolio__button-icon" />
+              </a>
+              {/* <a href={repositoryUrl} target="_blank" rel="noreferrer" className="portfolio__github-button">
 								<RiGithubLine className="portfolio__button-icon" />
 							</a> */}
-						</motion.div>
-					);
-				})}
-			</div>
-		</section>
-	);
+            </motion.div>
+          );
+        })}
+      </div>
+    </section>
+  );
 };
 
 export default Portfolio;
