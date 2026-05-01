@@ -88,7 +88,7 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio container section" id="services">
-      <h2 className="section__title">Achievements</h2>
+      <h2 className="section__title">Achievementseded</h2>
 
       <div className="portfolio__filters">
         <span
