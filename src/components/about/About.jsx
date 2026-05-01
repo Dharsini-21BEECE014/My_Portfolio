@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Image from "../../assets/avatar-9.png";
-import Resume from "../../assets/resume.pdf";
+import Resume from "../../assets/Dharsini M.pdf";
 import AboutBox from "./AboutBox";
 
 const About = () => {
@@ -19,31 +19,24 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              Hello! I'm Dharsini, based in Coimbatore, India. I am currently
-              pursuing my B.E. in Electronics and Communication Engineering at
-              Karpagam Academy of Higher Education.
+              Hi, I’m Dharsini, a B.E. Electronics and Communication Engineering graduate from Karpagam Academy of Higher Education, Coimbatore.
               <br />
               <br />
-              As a passionate final-year student with proficiency in C, C++,
-              Java, and foundational skills in Python and ReactJS,
-              I've been dedicated to expanding my knowledge and skills in
-              Web Development. My journey so far has been both challenging
-              and rewarding, and I am enthusiastic about further growth as a
-              Web Development. Currently, I am focused on building a diverse
-              portfolio of projects and contributing effectively as a team
-              player in any role I undertake.
+              I have a strong interest in software development, with hands-on experience in C, C++,Python and Java, along with foundational knowledge in Python and ReactJS. I’ve been actively building web development projects to strengthen my practical skills and deepen my understanding.
+I have also completed the AWS Cloud Practitioner certification, which has given me a solid foundation in cloud computing concepts and services.I’m currently seeking opportunities as a Software Development Engineer where I can apply my skills, contribute to real-world projects, and continue learning in a collaborative environment.
               <br />
               <br />
               Here are a few technologies I’ve been working with recently:
             </p>
             <ul className="about__list">
-              <li>C, C++,Python, Java</li>
+              <li>C, C++,Python, Java (Basic)</li>
              {/*<li>Swift</li>*/}
               <li>HTML, CSS, JavaScript</li>
-              <li>React JS</li>
+              <li>React JS,Angular JS (Basic)</li>
               <li>GitHub</li>
-              <li>Mongodb</li>
+              <li>SQL,Mongodb</li>
               <li>Postman</li>
+              <li>AWS Cloud Computing</li>
               <li>VS Code, Eclipse, NetBeans</li>
             </ul>
             <button className="btn" onClick={downloadResume}>

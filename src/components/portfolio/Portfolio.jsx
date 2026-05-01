@@ -35,18 +35,18 @@ const Portfolio = () => {
         >
           All
         </span>
-        <span
+         <span
           className={
             activeFilter === 1
               ? "portfolio__item portfolio__item-active"
-              : "portfolio__item"
+              : "portfolio__item" 
           }
           onClick={() => {
-            filterItems("Frontend");
+            filterItems("Dotnet");
             setActiveFilter(1);
           }}
         >
-          Frontend
+          Dotnet
         </span>
         <span
           className={
@@ -55,8 +55,21 @@ const Portfolio = () => {
               : "portfolio__item"
           }
           onClick={() => {
-            filterItems("Python");
+            filterItems("Frontend");
             setActiveFilter(2);
+          }}
+        >
+          Frontend
+        </span>
+        <span
+          className={
+            activeFilter === 3
+              ? "portfolio__item portfolio__item-active"
+              : "portfolio__item"
+          }
+          onClick={() => {
+            filterItems("Python");
+            setActiveFilter(3);
           }}
         >
           Python
@@ -76,13 +89,13 @@ const Portfolio = () => {
         </span>
         <span
           className={
-            activeFilter === 3
+            activeFilter === 5
               ? "portfolio__item portfolio__item-active"
               : "portfolio__item"
           }
           onClick={() => {
             filterItems("Electronics");
-            setActiveFilter(3);
+            setActiveFilter(5);
           }}
         >
           Electronics

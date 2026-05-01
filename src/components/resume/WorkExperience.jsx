@@ -1,6 +1,16 @@
 const WorkExperience = [
     {
         id: 1,
+        title: "Wordpress Developer",
+        company: "Empire AE IT Service" ,
+        yearsActive: "March 2026 - Present",
+        information: [
+            "A WordPress developer designs and builds websites using the WordPress platform, customizing themes and plugins to meet user needs.",
+            "They manage site performance, security, and functionality while ensuring a smooth user experience."
+        ],
+    },
+    {
+        id: 2,
         title: "Web Development",
         company: "Motion Cut Inside AICTE" ,
         yearsActive: "November 2023 - December 2023",
@@ -10,7 +20,7 @@ const WorkExperience = [
         ],
     },
     {
-        id: 2,
+        id: 3,
         title: "Embedded C",
         company: "Emglitz Technologies",
         yearsActive: "May 2023 - June 2023",
@@ -20,7 +30,7 @@ const WorkExperience = [
         ],
     },
     {
-        id: 3,
+        id: 4,
         title: "Very Large Scale Industry (VLSI)",
         company: "Sevael Technologies Private Limited",
         yearsActive: "July 2022 - August 2022",

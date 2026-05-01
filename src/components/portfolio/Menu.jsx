@@ -4,8 +4,17 @@ import Work3 from "../../assets/project-4.png";
 import Work4 from "../../assets/project-2.png";
 import Work5 from "../../assets/project-3.png";
 import Work6 from "../../assets/project-6.png";
+import Work7 from "../../assets/project-7.png";
 
 const Menu = [
+  {
+    id: 7,
+    image: Work7,
+    title: "Restaurant Table Booking & Order Management",
+    category: ["Dotnet"], 
+    url: "#",
+    repositoryUrl: "#",
+  },
   {
     id: 1,
     image: Work1,
@@ -14,6 +23,7 @@ const Menu = [
     url: "https://voterage-six.vercel.app",
     repositoryUrl: "https://github.com/Dharsini-21BEECE014/Voterage",
   },
+
   {
     id: 2,
     image: Work2,

@@ -4,6 +4,10 @@ import Image3 from "../../assets/certificate-2.png";
 import Image4 from "../../assets/certificate-1.png";
 import Image5 from "../../assets/certificate-3.jpg";
 import Image6 from "../../assets/certificate-4.png";
+import Image7 from "../../assets/certificate-6.png";
+import Image8 from "../../assets/certificate-7.png";
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
 
@@ -51,6 +55,22 @@ const Testimonials = () => {
       comment:
         "Comprehensive coverage of C++ syntax and basic programming concepts.Proficiency in C++ application development and algorithm design,enhancing problem-solving skills.",
     },
+    {
+      id: 6,
+      image: Image7,
+      title: "AWS Cloud Computing Practitioner",
+      subtitle: "@Vetri nichayam",
+      comment:
+        "AWS Certified Cloud Practitioner with foundational knowledge in cloud computing and AWS services.Familiar with core concepts like EC2, S3, IAM, and basic cloud architecture.",
+    }, {
+      id: 7,
+      image: Image8,
+      title: "TCS ION NQT",
+      subtitle: "@National Qualifier Test",
+      comment:
+        "Certified in TCS iON NQT with proven skills in aptitude, reasoning, and coding.Prepared to apply analytical thinking and technical knowledge in real-world scenarios.",
+    },
+
     // {
     // 	id: 6,
     // 	image: Image7,
